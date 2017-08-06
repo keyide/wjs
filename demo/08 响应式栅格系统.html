@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+    <title>template</title>
+    <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../lib/html5shiv/html5shiv.min.js"></script>
+    <script src="../lib/respond/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        .container{
+            height: 200px;
+            background: pink;
+        }
+        .container > .row{
+            height: 100px;
+            background: green;
+        }
+        .container > .row > div{
+            height: 100px;
+            border: 1px solid #ccc;
+            background: red;
+        }
+        /*
+        odd 奇数
+        even 偶数
+        */
+        .container > .row > div:nth-child(even){
+            background: #fff;
+        }
+    </style>
+</head>
+<body>
+<!--响应式布局容器-->
+<!--
+    一共6个容器
+    1.在大屏  6等份
+    2.在中屏  4等份
+    3.在小屏  3等份
+    4.在超小屏  2等份
+-->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"></div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"></div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"></div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"></div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"></div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"></div>
+    </div>
+</div>
+
+<a href="#" class="btn btn-primary btn-lg btn-block">按钮</a>
+
+<script src="../lib/jquery/jquery.min.js"></script>
+<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

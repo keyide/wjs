@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 1200px;
+            height: 1200px;
+            background: hotpink;
+            margin: 0 auto;
+        }
+        /*媒体查询的使用*/
+        /*
+        1.使用关键字  @media
+        2.查询屏幕 窗口的宽度
+        3. and 接条件
+        */
+        @media screen and (max-width: 768px){
+            /*4.写样式*/
+            .container{
+                width: 100%;
+                background: pink;
+            }
+            /*5.满足条件 代码生效*/
+        }
+        @media screen and (max-width: 992px) and (min-width: 768px){
+            .container{
+                width: 750px;
+                background: red;
+            }
+        }
+        @media screen and (max-width: 1200px) and (min-width: 992px){
+            .container{
+                width: 970px;
+                background: green;
+            }
+        }
+        @media screen and (min-width: 1200px){
+            .container{
+                width: 1170px;
+                background: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+<!--
+1. 在超小屏设备       -768px     容器 宽度百分百   背景颜色  粉色
+2. 在小屏设备    768px-992px     容器 750px       背景颜色  红色
+3. 在中屏设备    992px-1200px    容器 970px       背景颜色  绿色
+4. 在大屏设备    1200px-         容器 1170px      背景颜色  蓝色
+-->
+<!--
+完成需求  实现了响应式
+使用媒体查询
+响应式容器
+-->
+<div class="container">
+
+</div>
+</body>
+</html>

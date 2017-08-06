@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+    <title>template</title>
+    <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../lib/html5shiv/html5shiv.min.js"></script>
+    <script src="../lib/respond/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--
+navbar 指定是一个导航栏
+navbar-default 默认样式的导航栏
+模块
+-->
+<nav class="navbar navbar-default">
+    <!--响应式容器-->
+    <div class="container">
+        <!-- 商标区域 和 切换按钮  这个组合  在移动端显示比较好（完全显示） -->
+        <div class="navbar-header">
+            <!--切换按钮-->
+            <!--
+            自定义属性
+            data-toggle="collapse" 在初始化的时候  初始化成折叠js插件
+            data-target="#bs-example-navbar-collapse-1" 折叠的目标元素
+            盲人阅读器属性  aria-*
+            aria-expanded="false"
+            sr-only  screen read only 仅提供屏幕阅读器使用
+            -->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" >
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--商标区域-->
+            <a class="navbar-brand" href="#">Brand</a>
+        </div>
+        <!-- 导航链接 表单 都是被控制切换的内容 -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Link</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<script src="../lib/jquery/jquery.min.js"></script>
+<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

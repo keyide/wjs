@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+    <title>template</title>
+    <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../lib/html5shiv/html5shiv.min.js"></script>
+    <script src="../lib/respond/respond.min.js"></script>
+    <![endif]-->
+   <!-- <style>
+        @media (max-width: 768px) {
+            .tools{
+                display: none;
+            }
+        }
+        @media (max-width: 992px) and (min-width: 768px) {
+            .tools{
+                display: block;
+            }
+        }
+        @media (max-width: 1200px) and (min-width: 992px) {
+            .tools{
+                display: none;
+            }
+        }
+        @media (min-width: 1200px) {
+            .tools{
+                display: block;
+            }
+        }
+    </style>-->
+</head>
+<body>
+<!--
+hidden-*  只对某个屏幕的隐藏   其他的就是显示  推荐
+
+visible-* 只对某个屏幕的显示   其他的就是隐藏  3.2.0 不推荐
+-->
+<div class="tools hidden-md hidden-xs">
+    <p>1.在大屏  tools 显示</p>
+    <p>2.在中屏  tools 隐藏</p>
+    <p>3.在小屏  tools 显示</p>
+    <p>4.在超小屏  tools 隐藏</p>
+</div>
+<script src="../lib/jquery/jquery.min.js"></script>
+<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
