@@ -144,7 +144,7 @@ a:hover {
   top: 40px;
   left: 50%;
   margin-left: -60px;
-  z-index: 2;
+  z-index: 20;
 }
 .wjs_topBar .container>.row>div>a:hover >div {
   display: block;
@@ -221,7 +221,7 @@ a:hover {
 
 .wjs_navbar .navbar-toggle {
   border-color: #ddd;
-  margin: 23px 0;
+  margin: 23px 20px;
 }
 
 .wjs_navbar .navbar-toggle:focus, .wjs_navbar .navbar-toggle:hover {
@@ -282,11 +282,14 @@ a:hover {
   color: #ccc
 }
 .wjs_navbar .container .navbar-brand {
-  margin: 0;
   padding: 0;
   display: block;
   line-height: 80px;
-  margin-right: 20px;
+  margin:0 20px;
+}
+.navbar-collapse .navbar-nav {
+  margin: 0;
+  background-color: #fff;
 }
 
 
